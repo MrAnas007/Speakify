@@ -1,0 +1,92 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #08001f, #30197d);
+
+}
+
+.container {
+    width: 60%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container::after {
+    content: "";
+    width: 180px;
+    height: 180px;
+    background-color: #f41b75;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 185px;
+    z-index: -1;
+}
+
+.container::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    background-color: #419aff;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 50px;
+    right: 185px;
+    z-index: -1;
+}
+
+.container div {
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(40px);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    padding: 30px;
+    background-color: rgba(234, 0, 255, 0.038);
+}
+
+textarea {
+    max-width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #83a8ff12;
+    color: white;
+}
+
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.726);
+}
+
+button {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    
+    background: rgb(237, 55, 255);
+    background: linear-gradient(45deg, rgba(237, 55, 255, 1) 0%, rgba(171, 46, 253, 1) 50%, rgba(111, 37, 252, 1) 100%);
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    transition: 0.5s;
+}
+button:hover {  
+    box-shadow: 0px 0px 6.5px rgba(255, 255, 255, 0.404);
+}
